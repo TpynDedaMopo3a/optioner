@@ -11,8 +11,8 @@ var Joi = require('joi')
 var Hoek = require('hoek')
 
 
-module.exports = function (spec) {
-  return make_optioner(spec)
+module.exports = function (spec, options) {
+  return make_optioner(spec, options)
 }
 module.exports.Joi = Joi
 module.exports.inject = inject
